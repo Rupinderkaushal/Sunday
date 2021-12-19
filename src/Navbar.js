@@ -1,11 +1,12 @@
 import React from 'react';
-import {Navbar,Nav,NavDropdown,Form,Button,FormControl,Container} from "react-bootstrap"
+import {Navbar,Nav,NavDropdown,Form,Button,FormControl,Container} from "react-bootstrap";
+import {NavLink} from 'react-router-dom';
 const NavbarOne = () => {
     return (
         <div>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="warning" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="#">ProCoder</Navbar.Brand>
+    <Navbar.Brand href="/procoder" >ProCoder </Navbar.Brand>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
@@ -13,8 +14,9 @@ const NavbarOne = () => {
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-        <Nav.Link href="#action1">Home</Nav.Link>
-        <Nav.Link href="#action2">Projects</Nav.Link>
+        
+        <Nav.Link ><NavLink  exact to='/'>HOME</NavLink></Nav.Link>
+        <Nav.Link><NavLink exact to='/home'>HOME One</NavLink></Nav.Link>
         <NavDropdown title="DropDown" id="navbarScrollingDropdown">
           <NavDropdown.Item href="#action3">Project-one</NavDropdown.Item>
           <NavDropdown.Divider />
