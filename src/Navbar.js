@@ -6,7 +6,7 @@ const NavbarOne = () => {
         <div>
             <Navbar bg="warning" expand="lg">
   <Container fluid>
-    <Navbar.Brand href="/procoder" >ProCoder </Navbar.Brand>
+    <NavLink to='/procoder'>ProCoder</NavLink>
     <Navbar.Toggle aria-controls="navbarScroll" />
     <Navbar.Collapse id="navbarScroll">
       <Nav
