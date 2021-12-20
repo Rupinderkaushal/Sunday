@@ -1,9 +1,11 @@
 import React from 'react';
+import CaroselReact from './CaroselReact';
 const Home = () => {
     return (
-        <div>
-            <h1>im home</h1>
-        </div>
+        <>
+            
+            <CaroselReact/>
+        </>
     )
 }
 
